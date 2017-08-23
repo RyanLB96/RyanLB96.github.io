@@ -291,10 +291,11 @@ font-family: 'Nunito';}
 }
 
 .dropdown-content2 a:hover {
-  background-color: #ddd;
+  background-color: blue;
 }
 
-.dropdown2:hover .dropdown-content2 {
+/*----- affects size of sub content block ---*/
+.dropdown2:hover .dropdown-content2 { 
   display: block;
 	padding-left: 20px; 
 	padding-right: 20px; 
