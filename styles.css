@@ -259,7 +259,7 @@ font-family: 'Nunito';}
   font-size: 20px;
   border: none;
   outline: none;
-  color: white;
+  color: blue;
   padding: 20px 20px;
   height: 60px;
   box-sizing: border-box;
@@ -282,9 +282,10 @@ font-family: 'Nunito';}
   z-index: 1;
 }
 
+/* --- Text formatting of sub-content --- */
 .dropdown-content2 a {
   float: none;
-  color: blue;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
