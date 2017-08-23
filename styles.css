@@ -296,6 +296,8 @@ font-family: 'Nunito';}
 
 .dropdown2:hover .dropdown-content2 {
   display: block;
+	padding-left: 20px; 
+	padding-right: 20px; 
 }
 
 /*-----------End of sub menu -------------*/
