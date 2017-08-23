@@ -323,7 +323,7 @@ font-family: 'Nunito';}
 	color: red;
 }
 /* -- Makes currently hovered red --*/
-.active2 {
+.active2 a:hover {
 	color: red;
 }
 
