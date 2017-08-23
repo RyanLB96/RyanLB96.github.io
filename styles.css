@@ -312,7 +312,12 @@ font-family: 'Nunito';}
 }
 .greyhover a:hover,
 .dropdown2:hover .active2 {
-  background-color: #ddd;
+  background-color: red;
+
+}
+.greyhover a:hover,
+.dropdown2:hover {
+
 	color: red;
 }
 .active2 {
