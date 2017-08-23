@@ -310,16 +310,17 @@ font-family: 'Nunito';}
 .dropdown2:hover .dropdown-content2 { 
   display: block;
 }
+/* --- Background colour of active submenu --- */
 .greyhover a:hover,
 .dropdown2:hover .active2 {
-  background-color: blue;
-	color: blue; 
+  background-color: #ddd;
+
 
 }
 .greyhover a:hover,
 .dropdown2:hover {
 
-	color: red;
+	color: blue;
 }
 /* -- Makes currently hovered red --*/
 .active2 {
