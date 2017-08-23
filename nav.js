@@ -55,7 +55,7 @@ navigation += '<a href="gcsemaths.html">PDEs</a>'
 navigation += '</div>'
 navigation += '</div>'
 navigation += '</div>'
-navigation += '<a href="engineeringmathematics.html">Engineering Mathemathics</a>'
+navigation += '<a href="engineeringmathematics.html">Engineering Mathematics</a>'
 
 navigation += '</div>'
 navigation += '</div>'
