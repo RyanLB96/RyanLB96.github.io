@@ -9,7 +9,7 @@ navigation += '<a href="gcsebiology.html">Biology</a>'
 
 navigation += '<div class="greyhover">'
 navigation += '<div class="dropdown2">'
-navigation += '<a href="gcsebiology.html">Maths</a>'
+navigation += '<div class="active2"><a href="gcsebiology.html">Maths</a></div>'
 navigation += '<div class="dropdown-content2">'
 navigation += '<a href="gcsechemistry.html">Algebra</a>'
 navigation += '<a href="gcsebiology.html">Geometry</a>'
