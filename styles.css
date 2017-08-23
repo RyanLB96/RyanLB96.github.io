@@ -133,6 +133,10 @@ span {
 .redhover a:hover,
 .dropdown:hover .dropbtn {
   background-color: red;
+
+}
+.redhover a:hover,
+.dropdown:hover {
 	color: red;
 }
 
