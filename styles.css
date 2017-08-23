@@ -306,8 +306,10 @@ font-family: 'Nunito';}
   display: block;
 }
 .greyhover a:hover,
-.dropdown2:hover .dropbtn2 {
+.dropdown2:hover .active2 {
   background-color: #ddd;
+}
+.active2 {
 }
 
 /*-----------End of sub menu -------------*/
