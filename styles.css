@@ -268,7 +268,7 @@ font-family: 'Nunito';}
 
 .redhover a:hover,
 .dropdown2:hover .dropbtn2 {
-  background-color: red;
+  background-color: #ddd;
 }
 
 .dropdown-content2 {
@@ -290,8 +290,9 @@ font-family: 'Nunito';}
   font-family: 'Montserrat';
 }
 
+/*--- Colour when hovering over sub content ----*/
 .dropdown-content2 a:hover {
-  background-color: blue;
+  background-color: #ddd;
 }
 
 /*----- affects size of sub content block ---*/
