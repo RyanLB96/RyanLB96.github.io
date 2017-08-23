@@ -308,6 +308,7 @@ font-family: 'Nunito';}
 .greyhover a:hover,
 .dropdown2:hover .active2 {
   background-color: #ddd;
+	color: red;
 }
 .active2 {
 	color: red;
