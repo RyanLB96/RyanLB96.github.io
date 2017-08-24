@@ -149,7 +149,7 @@ span {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 240px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -287,10 +287,10 @@ font-family: 'Nunito';}
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 240px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-	margin-left: 240px; /* Sets the distance to thr right of parent dropdown for submenu */ 
+	margin-left: 200px; /* Sets the distance to thr right of parent dropdown for submenu */ 
 	margin-top: -44px; 
 
 
