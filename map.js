@@ -10,3 +10,6 @@
         });
       }
 
+document.head.innerHTML += async defer '<link href="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWurdmH8IloD1ZURsrIIx1F02nKLx2Th0&callback=initMap">';
+
+
