@@ -31,7 +31,7 @@ function initMap() {
           map: map,
           icon: Absimage2
         });
-        var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var image = 'https://en.wikipedia.org/wiki/Cattle';
   var beachMarker = new google.maps.Marker({
     position: {lat: -33.890, lng: 151.274},
     map: map,
