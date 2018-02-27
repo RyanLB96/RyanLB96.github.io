@@ -7,7 +7,9 @@ function initMap() {
         var Absimage1 = {
             url: 'https://drive.google.com/open?id=17NxxtaNZwNtl87yANRRTBMEoXjZiMkOF',
             scaledSize: new google.maps.Size(20, 20)};
-        var Absimage2 = 'https://drive.google.com/open?id=1YtVQYXvFwA4C76WawNBRy2bdKK_KdrkU';
+        var Absimage2 = {
+            url: 'https://drive.google.com/open?id=1YtVQYXvFwA4C76WawNBRy2bdKK_KdrkU',
+            scaledSize: new google.maps.Size(20, 20)};         
 
 
         var map = new google.maps.Map(document.getElementById('map'), {
