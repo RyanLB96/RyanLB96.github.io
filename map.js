@@ -12,6 +12,7 @@ function initMap() {
           zoom: 15,
           center: onefivethree
         });
+
         var marker = new google.maps.Marker({
           position: onefivethree,
           map: map
@@ -28,7 +29,7 @@ function initMap() {
         var marker4 = new google.maps.Marker({
           position: Abs2,
           map: map,
-          //icon: Absimage2
+          icon: Absimage2
         });
       }
 
