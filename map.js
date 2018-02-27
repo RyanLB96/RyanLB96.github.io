@@ -31,7 +31,7 @@ function initMap() {
           map: map,
           icon: Absimage2
         });
-        var image = 'Capture4.jpg';
+        var image = 'https://en.wikipedia.org/wiki/Cattle';
   var beachMarker = new google.maps.Marker({
     position: {lat: -33.890, lng: 151.274},
     map: map,
