@@ -5,7 +5,7 @@ function initMap() {
         var Abs2 =   {lat: 52.9558919,  lng: -1.153685600000017};
 
         var Absimage1 = {
-            url: 'https://drive.google.com/open?id=17NxxtaNZwNtl87yANRRTBMEoXjZiMkOF',
+            url: 'Capture3.jpg',
             scaledSize: new google.maps.Size(20, 20)};
         var Absimage2 = {
             url: 'https://drive.google.com/open?id=1YtVQYXvFwA4C76WawNBRy2bdKK_KdrkU',
