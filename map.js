@@ -13,6 +13,12 @@
           position: uluru2,
           map: map
         });
+        var myLatlng2 = new google.maps.LatLng(45.9,-85.6);
+
+var marker3 = new google.maps.Marker({
+    position: myLatlng2,
+    map: map
+});
       }
 
 
