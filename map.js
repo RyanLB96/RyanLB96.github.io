@@ -31,12 +31,13 @@ function initMap() {
           map: map,
           icon: 'Capture3.jpg'
         });
-        var image = 'https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg';
+        var image = {
+          url: 'https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg',
+          scaledSize: new google.maps.Size(10, 10)};
   var beachMarker = new google.maps.Marker({
     position: {lat: -33.890, lng: 151.274},
     map: map,
-    icon: image,
-    scaledSize: new google.maps.Size(10, 10)
+    icon: image    
   });
       }
 
