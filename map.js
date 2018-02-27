@@ -36,7 +36,7 @@ function initMap() {
     position: {lat: -33.890, lng: 151.274},
     map: map,
     icon: image,
-    scaledSize: new google.maps.Size(50, 50)
+    scaledSize: new google.maps.Size(10, 10)
   });
       }
 
