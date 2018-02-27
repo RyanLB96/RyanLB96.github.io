@@ -31,7 +31,7 @@ function initMap() {
           map: map,
           icon: Absimage2
         });
-        var image = 'https://drive.google.com/open?id=17NxxtaNZwNtl87yANRRTBMEoXjZiMkOF';
+        var image = 'Capture4.jpg';
   var beachMarker = new google.maps.Marker({
     position: {lat: -33.890, lng: 151.274},
     map: map,
