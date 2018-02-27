@@ -24,14 +24,14 @@ function initMap() {
         var marker3 = new google.maps.Marker({
           position: Abs1,
           map: map,
-          //icon: Absimage1
+          icon: Absimage1
         });
         var marker4 = new google.maps.Marker({
           position: Abs2,
           map: map,
           icon: 'Capture3.jpg'
         });
-        var image = 'https://en.wikipedia.org/wiki/Cattle';
+        var image = 'https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg';
   var beachMarker = new google.maps.Marker({
     position: {lat: -33.890, lng: 151.274},
     map: map,
