@@ -6,9 +6,9 @@ function initMap() {
 
         var Absimage1 = {
             url: 'Capture4.JPG',
-            scaledSize: new google.maps.Size(20, 20)};
+            scaledSize: new google.maps.Size(50, 50)};
         var Absimage2 = {
-            url: 'https://drive.google.com/open?id=1YtVQYXvFwA4C76WawNBRy2bdKK_KdrkU',
+            url: 'Capture3.JPG',
             scaledSize: new google.maps.Size(20, 20)};         
 
 
