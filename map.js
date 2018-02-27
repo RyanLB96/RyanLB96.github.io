@@ -28,7 +28,7 @@ function initMap() {
         var marker4 = new google.maps.Marker({
           position: Abs2,
           map: map,
-          icon: Absimage2
+          //icon: Absimage2
         });
       }
 
