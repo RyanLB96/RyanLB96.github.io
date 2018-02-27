@@ -4,8 +4,8 @@ function initMap() {
         var Abs1 =   {lat: 52.9513289,  lng: -1.1750136000000566};
         var Abs2 =   {lat: 52.9558919,  lng: -1.153685600000017};
 
-        var Absimage1 = 'https://drive.google.com/open?id=17NxxtaNZwNtl87yANRRTBMEoXjZiMkOF'
-        var Absimage2 = 'https://drive.google.com/open?id=1YtVQYXvFwA4C76WawNBRy2bdKK_KdrkU'
+        var Absimage1 = 'https://drive.google.com/open?id=17NxxtaNZwNtl87yANRRTBMEoXjZiMkOF';
+        var Absimage2 = 'https://drive.google.com/open?id=1YtVQYXvFwA4C76WawNBRy2bdKK_KdrkU';
 
 
         var map = new google.maps.Map(document.getElementById('map'), {
