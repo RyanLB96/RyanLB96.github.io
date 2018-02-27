@@ -6,10 +6,10 @@ function initMap() {
 
         var Absimage1 = {
             url: 'Capture4.JPG',
-            scaledSize: new google.maps.Size(50, 50)};
+            scaledSize: new google.maps.Size(100, 100)};
         var Absimage2 = {
             url: 'Capture3.JPG',
-            scaledSize: new google.maps.Size(20, 20)};         
+            scaledSize: new google.maps.Size(100, 100)};         
 
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -33,7 +33,7 @@ function initMap() {
         var marker4 = new google.maps.Marker({
           position: Abs2,
           map: map,
-          icon: 'Capture3.jpg'
+          icon: Absimage2
         });
         var image = {
           url: 'https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg',
