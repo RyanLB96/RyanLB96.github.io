@@ -9,7 +9,7 @@
           position: uluru,
           map: map
         });
-        var marker = new google.maps.Marker({
+        var marke2 = new google.maps.Marker({
           position: uluru2,
           map: map
         });
