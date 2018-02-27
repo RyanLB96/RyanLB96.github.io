@@ -13,19 +13,19 @@
           position: uluru2,
           map: map
         });
-var image = 'Capture4.jpg'
-var Abs1 = {lat: 52.9513289 , lng: -1.1750136000000566};
-var Abs2 = {lat: 52.9558919, lng: -1.153685600000017};
-var AbsMarker = new google.maps.Marker({
-  position: Abs1,
-  map: map,
-  icon: image
-});
-var image2 = 'Capture3.jpg'
-var AbsMarker2 = new google.maps.Marker({
-  position: Abs2,
-  map: map,
-  icon: image2
-});
+//var image = 'Capture4.jpg'
+//var Abs1 = {lat: 52.9513289 , lng: -1.1750136000000566};
+//ar Abs2 = {lat: 52.9558919, lng: -1.153685600000017};
+//var AbsMarker = new google.maps.Marker({
+//  position: Abs1,
+//  map: map,
+//  icon: image
+//});
+//var image2 = 'Capture3.jpg'
+//var AbsMarker2 = new google.maps.Marker({
+//  position: Abs2,
+//  map: map,
+//  icon: image2
+//});
       }
 
