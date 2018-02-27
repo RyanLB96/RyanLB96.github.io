@@ -31,5 +31,5 @@ function initMap() {
 //  map: map,
 //  icon: image2
 //});
-      }
+
 
