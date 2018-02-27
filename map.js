@@ -23,7 +23,7 @@ function initMap() {
         var marker3 = new google.maps.Marker({
           position: Abs1,
           map: map,
-          icon: Absimage1
+          //icon: Absimage1
         });
         var marker4 = new google.maps.Marker({
           position: Abs2,
