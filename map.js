@@ -29,7 +29,7 @@ function initMap() {
         var marker4 = new google.maps.Marker({
           position: Abs2,
           map: map,
-          icon: Absimage2 + 'Capture3.jpg'
+          icon: 'Capture3.jpg'
         });
         var image = 'https://en.wikipedia.org/wiki/Cattle';
   var beachMarker = new google.maps.Marker({
