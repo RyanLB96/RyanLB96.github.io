@@ -4,7 +4,9 @@ function initMap() {
         var Abs1 =   {lat: 52.9513289,  lng: -1.1750136000000566};
         var Abs2 =   {lat: 52.9558919,  lng: -1.153685600000017};
 
-        var Absimage1 = 'https://drive.google.com/open?id=17NxxtaNZwNtl87yANRRTBMEoXjZiMkOF';
+        var Absimage1 = {
+            url: 'https://drive.google.com/open?id=17NxxtaNZwNtl87yANRRTBMEoXjZiMkOF',
+            scaledSize: new google.maps.Size(20, 20)};
         var Absimage2 = 'https://drive.google.com/open?id=1YtVQYXvFwA4C76WawNBRy2bdKK_KdrkU';
 
 
@@ -33,7 +35,7 @@ function initMap() {
         });
         var image = {
           url: 'https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg',
-          scaledSize: new google.maps.Size(10, 10)};
+          scaledSize: new google.maps.Size(20, 20)};
   var beachMarker = new google.maps.Marker({
     position: {lat: -33.890, lng: 151.274},
     map: map,
