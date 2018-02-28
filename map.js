@@ -68,7 +68,7 @@ function initMap() {
       //Popups
       popup = new Popup(
       new google.maps.LatLng(52.95128216714832, -1.1750887018524736),
-      document.getElementById('contentpopup'));
+      document.getElementById('contentpopup1'));
       popup.setMap(map);
       //popup2 = new Popup(
       //new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
