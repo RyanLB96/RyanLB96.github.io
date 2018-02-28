@@ -52,7 +52,7 @@ function initMap() {
           map: map
         });
       var line2 = new google.maps.Polyline({
-        path: [{lat: 52.95659290665255, lng: -1.1524723154388994 }, {lat:52.9558919, lng: -1.153685600000017 }],
+        path: [{lat: 52.95659290665255, lng: -1.1524723154388994 }, {lat:52.956145287006045, lng: -1.1537383180939287 }],
         icons: [{
           icon: lineSymbol,
           offset: '100%'
