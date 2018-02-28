@@ -33,7 +33,7 @@ function initMap() {
         });
         var marker4 = new google.maps.Marker({
           position: Abs2,
-          title: 'CRISIS'; 
+          title: 'CRISIS', 
           map: map,
           icon: Absimage2
         });
