@@ -60,14 +60,16 @@ definePopupClass();
         }],
         map:map
       });
-popup = new Popup(
+
+      //Popups
+      popup = new Popup(
       new google.maps.LatLng(52.95128216714832, -1.1750887018524736),
       document.getElementById('contentpopup'));
-  popup.setMap(map);
-popup2 = new Popup(
-      new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
-      document.getElementById('contentpopup2'));
-  popup.setMap(map);
+      popup.setMap(map);
+      //popup2 = new Popup(
+      //new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
+      //document.getElementById('contentpopup2'));
+      //popup.setMap(map);
 
 }
 
