@@ -70,10 +70,10 @@ function initMap() {
       new google.maps.LatLng(52.951322191092046, -1.1751208883606523),
       document.getElementById('contentpopup1'));
       popup.setMap(map);
-      //popup2 = new Popup(
-      //new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
-      //document.getElementById('contentpopup2'));
-      //popup.setMap(map);
+      popup2 = new Popup(
+      new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
+      document.getElementById('contentpopup2'));
+      popup.setMap(map);
 
 }
 
