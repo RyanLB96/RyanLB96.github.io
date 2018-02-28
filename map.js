@@ -4,11 +4,6 @@ function initMap() {
         var Abs1 =   {lat: 52.9513289,  lng: -1.1750136000000566};
         var Abs2 =   {lat: 52.9558919,  lng: -1.153685600000017};
 
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        var label1 = 'The start of the night';
-        var label2 = 'CRISIS';
-        var labelIndex = 0;
-
         var Absimage1 = {
             url: 'Capture4.JPG',
             scaledSize: new google.maps.Size(100, 100)};
@@ -32,13 +27,13 @@ function initMap() {
         });
         var marker3 = new google.maps.Marker({
           position: Abs1,
-          label: label1,
+          title: 'The start of the night',
           map: map,
           icon: Absimage1
         });
         var marker4 = new google.maps.Marker({
           position: Abs2,
-          label: label2[labelIndex++ % label2.length],
+          title: 'CRISIS'; 
           map: map,
           icon: Absimage2
         });
