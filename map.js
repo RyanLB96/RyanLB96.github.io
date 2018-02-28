@@ -4,8 +4,10 @@ function initMap() {
           //definePopupClass();
           // definePopupClass2();
 //Markers variables
-        var onefivethree = {lat: 52.948574, lng: -1.169075};
-        var onefiveone = {lat: 52.948674, lng: -1.169075};
+        //var onefivethree = {lat: 52.948574, lng: -1.169075};
+        //var onefiveone = {lat: 52.948674, lng: -1.169075};
+        var onefivethree = {lat: 53.948574, lng: -1.169075};
+        var onefiveone = {lat: 51.948674, lng: -1.169075};
         //var Abs1 =   {lat: 52.9529005730305,  lng: -1.1777065378510088};
         //var Abs2 =   {lat: 52.952510320732365,  lng: -1.1586306673370927};
 
