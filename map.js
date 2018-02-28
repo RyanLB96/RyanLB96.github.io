@@ -2,6 +2,7 @@ var map, popup, Popup;
 
 function initMap() {
           definePopupClass();
+           definePopupClass2();
 //Markers variables
         var onefivethree = {lat: 52.948574, lng: -1.169075};
         var onefiveone = {lat: 52.948674, lng: -1.169075};
@@ -71,10 +72,10 @@ function initMap() {
       document.getElementById('contentpopup1'));
       popup.setMap(map);
 
-      popup2 = new Popup(
+      popup2 = new Popup2(
       new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
       document.getElementById('contentpopup2'));
-      popup.setMap(map);
+      popup2.setMap(map);
 
 }
 
@@ -91,12 +92,12 @@ function definePopupClass() {
     this.position = position;
 
     contentpopup1.classList.add('popup-bubble-content');
-     contentpopup2.classList.add('popup-bubble-content');
+    // contentpopup2.classList.add('popup-bubble-content');
 
     var pixelOffset = document.createElement('div');
     pixelOffset.classList.add('popup-bubble-anchor');
     pixelOffset.appendChild(contentpopup1);
-  pixelOffset.appendChild(contentpopup2);
+  //pixelOffset.appendChild(contentpopup2);
 
     this.anchor = document.createElement('div');
     this.anchor.classList.add('popup-tip-anchor');
@@ -141,6 +142,81 @@ function definePopupClass() {
 
   /** Stops clicks/drags from bubbling up to the map. */
   Popup.prototype.stopEventPropagation = function() {
+    var anchor = this.anchor;
+    anchor.style.cursor = 'auto';
+
+    ['click', 'dblclick', 'contextmenu', 'wheel', 'mousedown', 'touchstart',
+     'pointerdown']
+        .forEach(function(event) {
+          anchor.addEventListener(event, function(e) {
+            e.stopPropagation();
+          });
+        });
+  };
+      
+}
+function definePopupClass2() {
+  /**
+   * A customized popup on the map.
+   * @param {!google.maps.LatLng} position
+   * @param {!Element} content
+   * @constructor
+   * @extends {google.maps.OverlayView}
+   */
+  Popup2 = function(position, content) {
+    this.position = position;
+
+   // contentpopup1.classList.add('popup-bubble-content');
+     contentpopup2.classList.add('popup-bubble-content');
+
+    var pixelOffset = document.createElement('div');
+    pixelOffset.classList.add('popup-bubble-anchor');
+    //pixelOffset.appendChild(contentpopup1);
+  pixelOffset.appendChild(contentpopup2);
+
+    this.anchor = document.createElement('div');
+    this.anchor.classList.add('popup-tip-anchor');
+    this.anchor.appendChild(pixelOffset);
+
+    // Optionally stop clicks, etc., from bubbling up to the map.
+    this.stopEventPropagation();
+  };
+  // NOTE: google.maps.OverlayView is only defined once the Maps API has
+  // loaded. That is why Popup is defined inside initMap().
+  Popup2.prototype = Object.create(google.maps.OverlayView.prototype);
+
+  /** Called when the popup is added to the map. */
+  Popup2.prototype.onAdd = function() {
+    this.getPanes().floatPane.appendChild(this.anchor);
+  };
+
+  /** Called when the popup is removed from the map. */
+  Popup2.prototype.onRemove = function() {
+    if (this.anchor.parentElement) {
+      this.anchor.parentElement.removeChild(this.anchor);
+    }
+  };
+
+  /** Called when the popup needs to draw itself. */
+  Popup2.prototype.draw = function() {
+    var divPosition = this.getProjection().fromLatLngToDivPixel(this.position);
+    // Hide the popup when it is far out of view.
+    var display =
+        Math.abs(divPosition.x) < 4000 && Math.abs(divPosition.y) < 4000 ?
+        'block' :
+        'none';
+
+    if (display === 'block') {
+      this.anchor.style.left = divPosition.x + 'px';
+      this.anchor.style.top = divPosition.y + 'px';
+    }
+    if (this.anchor.style.display !== display) {
+      this.anchor.style.display = display;
+    }
+  };
+
+  /** Stops clicks/drags from bubbling up to the map. */
+  Popup2.prototype.stopEventPropagation = function() {
     var anchor = this.anchor;
     anchor.style.cursor = 'auto';
 
