@@ -1,4 +1,7 @@
+var map, popup, Popup;
+
 function initMap() {
+          definePopupClass();
 //Markers variables
         var onefivethree = {lat: 52.948574, lng: -1.169075};
         var onefiveone = {lat: 52.948674, lng: -1.169075};
@@ -15,10 +18,11 @@ function initMap() {
         var lineSymbol = {
           path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
         };       
-        var popup, Popup;
-definePopupClass();
+        
+        
+
 //Map
-        var map = new google.maps.Map(document.getElementById('map'), {
+        map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: {lat:52.951866350084, lng:-1.1726425272308916}
         });
