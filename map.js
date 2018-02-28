@@ -5,6 +5,8 @@ function initMap() {
         var Abs2 =   {lat: 52.9558919,  lng: -1.153685600000017};
 
         var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var label1 = 'The start of the night';
+        var label2 = 'CRISIS';
         var labelIndex = 0;
 
         var Absimage1 = {
@@ -30,13 +32,13 @@ function initMap() {
         });
         var marker3 = new google.maps.Marker({
           position: Abs1,
-          label: labels[labelIndex++ % labels.length],
+          label: label1,
           map: map,
           icon: Absimage1
         });
         var marker4 = new google.maps.Marker({
           position: Abs2,
-          label: labels[labelIndex++ % labels.length],
+          label: label2[labelIndex++ % label2.length],
           map: map,
           icon: Absimage2
         });
