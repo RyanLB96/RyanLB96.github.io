@@ -3,7 +3,7 @@ function initMap() {
         var onefivethree = {lat: 52.948574, lng: -1.169075};
         var onefiveone = {lat: 52.948674, lng: -1.169075};
         var Abs1 =   {lat: 52.9529005730305,  lng: -1.1777065378510088};
-        var Abs2 =   {lat: 52.9558919,  lng: -1.153685600000017};
+        var Abs2 =   {lat: 52.95659290665255,  lng: -1.1524723154388994};
 
         var Absimage1 = {
             url: 'Capture4.JPG',
