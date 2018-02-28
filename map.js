@@ -49,7 +49,7 @@ function initMap() {
         });
       //Line
       var line = new google.maps.Polyline({
-          path: [{lat: 52.9529005730305, lng: -1.1777065378510088}, {lat: 52.95128216714832, lng: -1.1750887018524736}],
+          path: [{lat: 52.9529005730305, lng: -1.1777065378510088}, {lat: 52.951322191092046, lng: -1.1751208883606523}],
           icons: [{
             icon: lineSymbol,
             offset: '100%'
@@ -67,7 +67,7 @@ function initMap() {
 
       //Popups
       popup = new Popup(
-      new google.maps.LatLng(52.95128216714832, -1.1750887018524736),
+      new google.maps.LatLng(52.951322191092046, -1.1751208883606523),
       document.getElementById('contentpopup1'));
       popup.setMap(map);
       //popup2 = new Popup(
