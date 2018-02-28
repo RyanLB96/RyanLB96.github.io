@@ -2,7 +2,7 @@ function initMap() {
 //Markers variables
         var onefivethree = {lat: 52.948574, lng: -1.169075};
         var onefiveone = {lat: 52.948674, lng: -1.169075};
-        var Abs1 =   {lat: 52.95155514119412,  lng: -1.1754856687866777};
+        var Abs1 =   {lat: 52.9529005730305,  lng: -1.1777065378510088};
         var Abs2 =   {lat: 52.9558919,  lng: -1.153685600000017};
 
         var Absimage1 = {
@@ -44,7 +44,7 @@ function initMap() {
         });
       //Line
       var line = new google.maps.Polyline({
-          path: [{lat: 52.95155514119412, lng: -1.1754856687866777}, {lat: 52.9513289, lng: -1.1750136000000566}],
+          path: [{lat: 52.9529005730305, lng: -1.1777065378510088}, {lat: 52.9513289, lng: -1.1750136000000566}],
           icons: [{
             icon: lineSymbol,
             offset: '100%'
