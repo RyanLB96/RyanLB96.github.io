@@ -51,5 +51,13 @@ function initMap() {
           }],
           map: map
         });
+      var line2 = new google.maps.Polyline({
+        path: [{lat: 52.95659290665255, lng: -1.1524723154388994 }, {lat:52.9558919, lng: -1.153685600000017 }],
+        icons: [{
+          icon: lineSymbol,
+          offset: '100%'
+        }],
+        map:map
+      });
       }
 
