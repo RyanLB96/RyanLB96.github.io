@@ -19,7 +19,7 @@ function initMap() {
 //Map
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
-          center: onefivethree
+          center: {lat:52.951866350084, lng:-1.1726425272308916}
         });
 //4 Markers
         var marker = new google.maps.Marker({
