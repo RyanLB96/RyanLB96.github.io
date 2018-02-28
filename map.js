@@ -1,4 +1,4 @@
-var map, popup, Popup;
+var map, popup, Popup, Popup2;
 
 function initMap() {
           definePopupClass();
