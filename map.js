@@ -3,7 +3,7 @@ function initMap() {
         var onefivethree = {lat: 52.948574, lng: -1.169075};
         var onefiveone = {lat: 52.948674, lng: -1.169075};
         var Abs1 =   {lat: 52.9529005730305,  lng: -1.1777065378510088};
-        var Abs2 =   {lat: 52.95659290665255,  lng: -1.1524723154388994};
+        var Abs2 =   {lat: 52.9547427213947,  lng: -1.1558948141419023};
 
         var Absimage1 = {
             url: 'Capture4.JPG',
@@ -52,7 +52,7 @@ function initMap() {
           map: map
         });
       var line2 = new google.maps.Polyline({
-        path: [{lat: 52.95659290665255, lng: -1.1524723154388994 }, {lat:52.956145287006045, lng: -1.1537383180939287 }],
+        path: [{lat: 52.9547427213947, lng: -1.1558948141419023 }, {lat:52.956145287006045, lng: -1.1537383180939287 }],
         icons: [{
           icon: lineSymbol,
           offset: '100%'
