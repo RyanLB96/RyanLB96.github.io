@@ -1,26 +1,26 @@
 var map, popup, Popup, Popup2;
 
 function initMap() {
-          //definePopupClass();
-          // definePopupClass2();
+          definePopupClass();
+           definePopupClass2();
 //Markers variables
-        //var onefivethree = {lat: 52.948574, lng: -1.169075};
-        //var onefiveone = {lat: 52.948674, lng: -1.169075};
+        var onefivethree = {lat: 52.948574, lng: -1.169075};
+        var onefiveone = {lat: 52.948674, lng: -1.169075};
         var onefivethree = {lat: 53.948574, lng: -1.169075};
         var onefiveone = {lat: 51.948674, lng: -1.169075};
-        //var Abs1 =   {lat: 52.9529005730305,  lng: -1.1777065378510088};
-        //var Abs2 =   {lat: 52.952510320732365,  lng: -1.1586306673370927};
+        var Abs1 =   {lat: 52.9529005730305,  lng: -1.1777065378510088};
+        var Abs2 =   {lat: 52.952510320732365,  lng: -1.1586306673370927};
 
-        //var Absimage1 = {
-        //    url: 'Capture4.JPG',
-        //    scaledSize: new google.maps.Size(100, 200)};
-        //var Absimage2 = {
-        //    url: 'Capture3.JPG',
-        //    scaledSize: new google.maps.Size(100, 100)};  
+        var Absimage1 = {
+            url: 'Capture4.JPG',
+            scaledSize: new google.maps.Size(100, 200)};
+        var Absimage2 = {
+            url: 'Capture3.JPG',
+            scaledSize: new google.maps.Size(100, 100)};  
 //Line variables
-        //var lineSymbol = {
-        //  path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
-        //};       
+        var lineSymbol = {
+          path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
+        };       
         
         
 
@@ -38,46 +38,46 @@ function initMap() {
           position: onefiveone,
           map: map
         });
-        //var marker3 = new google.maps.Marker({
-        //  position: Abs1,
-        //  title: 'The start of the night',
-        //  map: map,
-        //  icon: Absimage1
-        //});
-        //var marker4 = new google.maps.Marker({
-        //  position: Abs2,
-        //  title: 'When the drinks hit', 
-        //  map: map,
-        //  icon: Absimage2
-        //});
+        var marker3 = new google.maps.Marker({
+          position: Abs1,
+          title: 'The start of the night',
+          map: map,
+          icon: Absimage1
+        });
+        var marker4 = new google.maps.Marker({
+          position: Abs2,
+          title: 'When the drinks hit', 
+          map: map,
+          icon: Absimage2
+        });
       //Line
-      //var line = new google.maps.Polyline({
-      //    path: [{lat: 52.9529005730305, lng: -1.1777065378510088}, {lat: 52.951322191092046, lng: -1.1751208883606523}],
-      //    icons: [{
-      //      icon: lineSymbol,
-      //      offset: '100%'
-      //    }],
-      //    map: map
-      //  });
-      //var line2 = new google.maps.Polyline({
-      //  path: [{lat: 52.952510320732365, lng: -1.1586306673370927 }, {lat:52.956145287006045, lng: -1.1537383180939287 }],
-      //  icons: [{
-      //    icon: lineSymbol,
-      //    offset: '100%'
-      //  }],
-      //  map:map
-      //});
+      var line = new google.maps.Polyline({
+          path: [{lat: 52.9529005730305, lng: -1.1777065378510088}, {lat: 52.951322191092046, lng: -1.1751208883606523}],
+          icons: [{
+            icon: lineSymbol,
+            offset: '100%'
+          }],
+          map: map
+        });
+      var line2 = new google.maps.Polyline({
+        path: [{lat: 52.952510320732365, lng: -1.1586306673370927 }, {lat:52.956145287006045, lng: -1.1537383180939287 }],
+        icons: [{
+          icon: lineSymbol,
+          offset: '100%'
+        }],
+        map:map
+      });
 
       //Popups
-      //popup = new Popup(
-      //new google.maps.LatLng(52.951322191092046, -1.1751208883606523),
-      //document.getElementById('contentpopup1'));
-      //popup.setMap(map);
+      popup = new Popup(
+      new google.maps.LatLng(52.951322191092046, -1.1751208883606523),
+      document.getElementById('contentpopup1'));
+      popup.setMap(map);
 
-      //popup2 = new Popup2(
-      //new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
-      //document.getElementById('contentpopup2'));
-      //popup2.setMap(map);
+      popup2 = new Popup2(
+      new google.maps.LatLng(52.956145287006045, -1.1537383180939287),
+      document.getElementById('contentpopup2'));
+      popup2.setMap(map);
 
 }
 
