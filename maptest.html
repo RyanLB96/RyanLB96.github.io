@@ -1,26 +1,62 @@
-<!DOCTYPE html >
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>Using MySQL and PHP with Google Maps</title>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
+<!DOCTYPE html>
+<html class="backgroundimage">
+<head>
+     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+     <meta charset="utf-8">
+<style>
+       #map {
+        height: 600px;
+        width: 100%;
+       }
+       /* The location pointed to by the popup tip. */
+      .popup-tip-anchor {
+        height: 0;
+        position: absolute;
+        /* The max width of the info window. */
+        width: 200px;
       }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+      /* The bubble is anchored above the tip. */
+      .popup-bubble-anchor {
+        position: absolute;
+        width: 100%;
+        bottom: /* TIP_HEIGHT= */ 8px;
+        left: 0;
+      }
+      /* Draw the tip. */
+      .popup-bubble-anchor::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* Center the tip horizontally. */
+        transform: translate(-50%, 0);
+        /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+        width: 0;
+        height: 0;
+        /* The tip is 8px high, and 12px wide. */
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: /* TIP_HEIGHT= */ 8px solid white;
+      }
+      /* The popup bubble itself. */
+      .popup-bubble-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -100%);
+        /* Style the info window. */
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: sans-serif;
+        overflow-y: auto;
+        max-height: 60px;
+        box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
       }
     </style>
-  </head>
-
-  <body>
-
-    <div id="navigation"></div>
+</head>
+<body>
+<div id="navigation"></div>
 
 <div id="sidebar">
   <h4><a href="#Atoms" >Atoms, Elements and the Periodic Table</a></h4>
@@ -33,10 +69,7 @@
 <div id="content">
 <h3>My Google Maps Demo3</h3>
 
-
-    <div id="map"></div>
-
-    <script>
+ <script>
       var customLabel = {
         restaurant: {
           label: 'R'
@@ -56,13 +89,13 @@
         var infoWindow = new google.maps.InfoWindow;
 
           // Change this depending on the name of your PHP or XML file
-          downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
-          //	downloadUrl('http://localhost/projectgmaps/map_xml.php', function(data) {
+          //downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+            downloadUrl('http://localhost/projectgmaps/map_xml.php', function(data) {
 
             var xml = data.responseXML;
-            alert (xml);
+            //alert (xml);
             var markers = xml.documentElement.getElementsByTagName('marker');
-            alert (markers);
+            //alert (markers);
             Array.prototype.forEach.call(markers, function(markerElem) {
               var id = markerElem.getAttribute('id');
               var name = markerElem.getAttribute('name');
@@ -75,7 +108,7 @@
               var infowincontent = document.createElement('div');
               var strong = document.createElement('strong');
 
-              alert (type);
+              //alert (type);
               strong.textContent = name
               infowincontent.appendChild(strong);
               infowincontent.appendChild(document.createElement('br'));
@@ -117,9 +150,14 @@
 
       function doNothing() {}
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWurdmH8IloD1ZURsrIIx1F02nKLx2Th0&callback=initMap">
-    </script>
+
+
+
+
+
+
+
+
 
 
 <p style="padding-bottom: 800px;">TEXT</p>
@@ -137,9 +175,7 @@
 <script src="template.js"></script>
 <!-- Script for the Google API --> 
 <!-- <script src="map.js"></script> -->
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWurdmH8IloD1ZURsrIIx1F02nKLx2Th0&callback=initMap"></script>
 
 </body>
-  </body>
-</html>
-
+</html> 
