@@ -19,6 +19,21 @@
   </head>
 
   <body>
+
+    <div id="navigation"></div>
+
+<div id="sidebar">
+  <h4><a href="#Atoms" >Atoms, Elements and the Periodic Table</a></h4>
+  <h4><a href="#Group-1">Group 1</a></h4>
+  <h4><a href="#Group-7">Group 7</a></h4>
+  <h4><a href="#Group-0">Group 0 - Noble Gases</a></h4>
+</div>
+
+
+<div id="content">
+<h3>My Google Maps Demo3</h3>
+
+
     <div id="map"></div>
 
     <script>
@@ -41,8 +56,8 @@
         var infoWindow = new google.maps.InfoWindow;
 
           // Change this depending on the name of your PHP or XML file
-          //downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
-          	downloadUrl('http://localhost/projectgmaps/map_xml.php', function(data) {
+          downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+          //	downloadUrl('http://localhost/projectgmaps/map_xml.php', function(data) {
 
             var xml = data.responseXML;
             alert (xml);
@@ -105,6 +120,26 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWurdmH8IloD1ZURsrIIx1F02nKLx2Th0&callback=initMap">
     </script>
+
+
+<p style="padding-bottom: 800px;">TEXT</p>
+<p style="padding-bottom: 200px;">TEXT</p>
+</div>
+
+
+
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.js"></script>
+<script src="smoothscroll.js"></script>
+<script src="nav.js"></script>
+<script src="template.js"></script>
+<!-- Script for the Google API --> 
+<!-- <script src="map.js"></script> -->
+
+
+</body>
   </body>
 </html>
 
